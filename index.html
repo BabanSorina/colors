@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="modal.css">
+    <script src="https://kit.fontawesome.com/6c692c328f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navbar section-->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">COLOR</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">HOME</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="about-page">ABOUT</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#services" class="navbar__links" id="services-page">SERVICES</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="#sign-up" class="button" id="signup">SIGN UP</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- model-->
+    <div class="email-modal" id="email-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-content-left">
+                <img id="modal-img" src="images/email.svg" alt="">
+            </div>
+            <div class="modal-content-right">
+                <form action="/" class="modal-form" id="form">
+                    <h1>Get started with us today! Create your account now</h1>
+                    <div class="form-validation">
+                        <input type="text" class="modal-input" id="name" name="name" placeholder="Enter your name">
+                        <p>Error Message</p>
+                    </div>
+                    <div class="form-validation">
+                        <input type="email" class="modal-input" id="email" name="email" placeholder="Enter your email">
+                        <p>Error Message</p>
+                    </div>
+                    <div class="form-validation">
+                        <input type="password" class="modal-input" id="password" name="password" placeholder="Enter your password">
+                        <p>Error Message</p>
+                    </div>
+                    <div class="form-validation">
+                        <input type="password" class="modal-input" id="password-confirm" name="password" placeholder="Confirm your password">
+                        <p>Error Message</p>
+                    </div>
+                    <input type="submit" class="modal-input-btn" value="Sign up">
+                    <span class="modal-input-login">Already have an account? Login <a href="#">Here</a></span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="contact-modal" id="contact-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-content-left">
+                <img id="modal-img" src="images/contact.svg" alt="">
+            </div>
+            <div class="modal-content-right">
+                <form action="/" class="modal-form" id="contact-form">
+                    <h1>Send us a message and we will get back at you</h1>
+                    <div class="form-validation">
+                        <input type="text" class="modal-input" id="name1" name="name" placeholder="Enter your name">
+                        <p>Error Message</p>
+                    </div>
+                    <div class="form-validation">
+                        <input type="email" class="modal-input" id="email1" name="email" placeholder="Enter your email">
+                        <p>Error Message</p>
+                    </div>
+                    <div class="form-validation">
+                        <input type="text" class="modal-input" id="message-user" name="message-user" placeholder="Tell us your message">
+                        <p>Error Message</p>
+                    </div>
+
+                    <input type="submit" class="modal-input-btn" value="Send message">
+                    <span class="modal-input-message">Want to send us an email? Get the details <a href="#">Here</a></span>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero section-->
+    <div class="hero" id="home">
+        <div class="hero__container">
+            <h1 class="hero__heading">Choose your <span>colors</span></h1>
+            <p class="hero__description">Unlimited posibilities</p>
+            <button class="main__btn" id="hero__btn"><a href="#">Explore</a></button>
+        </div>
+    </div>
+    <!--   About section-->
+    <div class="main" id="about">
+        <div class="main__container">
+            <div class="main__img--container">
+                <div class="main__img--card"><i class="fas fa-layer-group"></i> </div>
+            </div>
+            <div class="main__content">
+                <h1>What do we do?</h1>
+                <h2>We help bussineses scale</h2>
+                <p>Send us a message to get more information</p>
+                <button class="main__btn" id="contact-btn"><a href="#">Send message</a></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- service section -->
+    <div class="services" id="services">
+        <h1>Our services</h1>
+        <div class="services__wrapper">
+            <div class="services__card">
+                <h2>custom colorways</h2>
+                <p>AI powered tech</p>
+                <div class="services__btn"><button>get started</button></div>
+            </div>
+            <div class="services__card">
+                <h2>are you ready</h2>
+                <p>take the leap</p>
+                <div class="services__btn"><button>get started</button></div>
+            </div>
+            <div class="services__card">
+                <h2>full gradient</h2>
+                <p>100 combinations</p>
+                <div class="services__btn"><button>get started</button></div>
+            </div>
+            <div class="services__card">
+                <h2>infinite choices</h2>
+                <p>1000's of colors</p>
+                <div class="services__btn"><button>get started</button></div>
+            </div>
+        </div>
+
+    </div>
+    <!--Image gallery -->
+    <div class="services1_wrapper">
+        <div class="service1-section">
+            <div class="services1">
+                <div class="services1-cell">
+                    <img src="images/1.JPG" alt="" class="services1-cell_img">
+                    <div class="services1-cell_text">Digital Marketing</div>
+                </div>
+                <div class="services1-cell">
+                    <img src="images/2.JPG" alt="" class="services1-cell_img">
+                    <div class="services1-cell_text">web development</div>
+                </div>
+                <div class="services1-cell">
+                    <img src="images/3.JPG" alt="" class="services1-cell_img">
+                    <div class="services1-cell_text">videography</div>
+                </div>
+                <div class="services1-cell">
+                    <img src="images/4.JPG" alt="" class="services1-cell_img">
+                    <div class="services1-cell_text">photography</div>
+                </div>
+                <div class="services1-cell">
+                    <img src="images/5.JPG" alt="" class="services1-cell_img">
+                    <div class="services1-cell_text">seo</div>
+                </div>
+                <div class="services1-cell">
+                    <img src="images/6.JPG" alt="" class="services1-cell_img">
+                    <div class="services1-cell_text">consulting</div>
+                </div>
+                <div class="services1-cell">
+                    <img src="images/7.jpeg" alt="" class="services1-cell_img">
+                    <div class="services1-cell_text">design</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- features section-->
+    <div class="main" id="sign-up">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>Join our team</h1>
+                <h2>Sign up today</h2>
+                <p>See what makes u different</p>
+                <button class="main__btn" id="features_btn"><a href="#">Sign up</a></button>
+
+            </div>
+            <div class="main__img--container">
+                <div class="main__img--card" id="card-2"><i class="fas fa-users"></i> </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- footer-->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>About Us</h2>
+                    <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
+                    <a href="/">Careers</a> <a href="/">Terms of Service</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Contact Us</h2>
+                    <a href="/">Contact</a> <a href="/">Support</a>
+                    <a href="/">Destinations</a>
+                </div>
+            </div>
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Videos</h2>
+                    <a href="/">Submit Video</a> <a href="/">Ambassadors</a>
+                    <a href="/">Agency</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Social Media</h2>
+                    <a href="/">Instagram</a> <a href="/">Facebook</a>
+                    <a href="/">Youtube</a> <a href="/">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <section class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="/" id="footer__logo">COLOR</a>
+                </div>
+                <p class="website__rights">COLOR2020 ALL right reserved</p>
+                <div class="social__icons">
+                    <a href="/" class="social__icon--link"><i class="fab fa-facebook"></i></a>
+                    <a href="/" class="social__icon--link"><i class="fab fa-instagram"></i></a>
+                    <a href="/" class="social__icon--link"><i class="fab fa-youtube"></i></a>
+                    <a href="/" class="social__icon--link"><i class="fab fa-linkedin"></i></a>
+                    <a href="/" class="social__icon--link"><i class="fab fa-twitter"></i></a>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
